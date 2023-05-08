@@ -1,0 +1,164 @@
+ 
+
+
+
+nav {
+  background: #004b91;
+  padding: 5px 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+nav ul li.items {
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+
+nav ul li.items:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+nav ul li.items:hover:after {
+  opacity: 1;
+  bottom: 8px;
+}
+
+nav ul li.logo {
+  flex: 1;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: .4s;
+}
+
+nav ul li:hover a {
+  color: rgb(255, 255, 255);
+}
+
+nav ul li i {
+  font-size: 23px;
+}
+
+nav ul li.btn {
+  display: none;
+}
+
+nav ul li.btn.hide i:before {
+  content: '\f00d';
+}
+
+@media all and (max-width: 900px) {
+  nav {
+    padding: 5px 30px;
+  }
+
+  nav ul li.items {
+    width: 100%;
+    display: none;
+  }
+
+  nav ul li.items.show {
+    display: block;
+  }
+
+  nav ul li.btn {
+    display: block;
+  }
+
+  nav ul li.items:hover {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #004b91,
+      inset 0 0 10px #004b91;
+  }
+
+  nav ul li.items:hover:after {
+    opacity: 0;
+  }
+}
+.all-body{
+background-color: #30AADD;
+}
+.section{
+    background-size: 100%;
+    
+    padding: 75px 0px;
+    
+}
+.form-box {
+    background-color: rgba(225, 225, 225, 0.5);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    border: 1px solid white;
+    /* width: 500px; */
+}
+.text{
+    width: 500px;
+}
+.form-box input {
+    border-radius: 10px;
+}
+
+/* .form-box input:focus {
+    box-shadow: 0 0 0;
+    border: 1px solid #f6288c;
+} */
+
+.input-box:focus {
+    box-shadow: 0 0 0;
+    border: 1px solid #f6288c;
+}
+.button{
+    background-image: linear-gradient(to right, #3330E4, #37E2D5, #39B5E0);
+    color: white;
+}
+.log-in-link{
+text-decoration: none;
+color: #30AADD;
+}
+.log-in-link:hover{
+    color: blue;
+}
+
+@media screen and (max-width: 990px){
+    .text{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 767px){
+    .form-box{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
